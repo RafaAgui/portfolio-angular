@@ -1,0 +1,23 @@
+<header class="header">
+  <nav class="nav">
+    <ul class="primary-menu">
+      <li class="primary-menu__tag">
+        <a class="primary-menu__link" [routerLink]="['/sobre-mi']" routerLinkActive="router-link-active">Sobre mi</a>
+      </li>
+      <li class="primary-menu__tag">
+        <a class="primary-menu__link" [routerLink]="['/proyectos']" routerLinkActive="router-link-active">Proyectos</a>
+      </li>
+      <li><h1 class="header__title">{{title}}</h1></li>
+      <li class="primary-menu__tag">
+        <a class="primary-menu__link" [routerLink]="['/crear-proyecto']" routerLinkActive="router-link-active">Crear Proyecto</a>
+      </li>
+      <li class="primary-menu__tag">
+        <a class="primary-menu__link" [routerLink]="['/contacto']" routerLinkActive="router-link-active">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="content">
+<router-outlet></router-outlet>
+</main>
+<footer class="footer">Rafael Aguilar | 2023</footer>
