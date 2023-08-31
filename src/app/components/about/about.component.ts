@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+public title: string = 'Rafael Aguilar';
+public subtitle: string = 'Desarrollador web';
+public web: string = 'https://rafaelaguilar.es';
+
 
 }
