@@ -50,7 +50,7 @@
       "name": "Computers"
     }
   ],
-  "products": [
+  "projects": [
     {
       "id": 1,
       "name": "Essential TypeScript 4: From Beginner to Pro",
@@ -114,6 +114,47 @@
       "description": "Plug & play. Easy to use,powered by USB port. No external driver and Power needed. Just plug it into your USB port and the DVD driver will be detected",
       "categoryId": 3,
       "stock": 10
+    },
+    {
+      "_id": "",
+      "name": "First name*",
+      "price": 123,
+      "description": "trololo",
+      "categoryId": "",
+      "stock": 32,
+      "id": 9
+    },
+    {
+      "name": "First name*",
+      "price": 2,
+      "description": "trololo",
+      "categoryId": "",
+      "stock": 2,
+      "id": 10
+    },
+    {
+      "name": "First name*",
+      "price": 1,
+      "description": "trololo",
+      "categoryId": "",
+      "stock": 1,
+      "id": 11
+    },
+    {
+      "name": "First name*",
+      "price": 2,
+      "description": "trololo",
+      "categoryId": "",
+      "stock": -2,
+      "id": 12
+    },
+    {
+      "name": "First name*",
+      "price": 2,
+      "description": "trololo",
+      "categoryId": "",
+      "stock": 3,
+      "id": 13
     }
   ],
   "orders": [

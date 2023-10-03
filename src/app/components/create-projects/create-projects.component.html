@@ -1,1 +1,41 @@
-<p>create-projects works!</p>
+<div class="container">
+  <h1>{{title}}</h1>
+  <div class="success" *ngIf="status == 'success'">
+    El proyecto se ha creado correctamente
+  </div>
+  <div class="failed" *ngIf="status == 'failed'">
+    No se ha creado nada
+  </div>
+  <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+    <p>
+      <label for="name">Nombre</label>
+      <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+      <span *ngIf="name.touched && !name.valid">
+        El nombre es obligatorio
+      </span>
+    </p>
+    <p>
+      <label for="description">Descripción</label>
+      <input required type="text" name="description" #description="ngModel" [(ngModel)]="project.description">
+      <span *ngIf="description.touched && !description.valid">
+        La descripción es obligatoria
+      </span>
+    </p>
+    <p>
+      <label for="price">Precio</label>
+      <input required type="number" name="price" #price="ngModel" [(ngModel)]="project.price">
+      <span *ngIf="price.touched && !price.valid">
+        El Precio es obligatorio
+      </span>
+    </p>
+    <p>
+      <label for="stock">stock</label>
+      <input type="number" name="stock" #stock="ngModel" [(ngModel)]="project.stock">
+    </p>
+    <p>
+      <label for="image">Subir imagen</label>
+      <input  type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)">
+    </p>
+    <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid">
+  </form>
+</div>

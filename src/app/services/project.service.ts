@@ -1,7 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Project } from '../interface/project.interface'
+import { Project } from '../models/project'
+
 
 
 
@@ -10,9 +11,11 @@ import { Project } from '../interface/project.interface'
 })
 
 export class ProjectsService {
-  private apiURL = 'http://localhost:3000/products';
+  private apiURL = 'http://localhost:3000/projects';
+
 
   constructor(private http: HttpClient) {}
+
 
   getProducts(): Observable<Project[]>{
     return this.http.get<Project[]>(this.apiURL);
@@ -22,4 +25,15 @@ export class ProjectsService {
     return this.http.get<Project>(`${this.apiURL}/${id}`);
   }
 
+  saveProject(project: Project): Observable<any>{
+    let params = JSON.stringify(project);
+    let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+    return this.http.post(this.apiURL, params, {headers: headers});
+  }
+
+  getProjects(): Observable<any>{
+    let headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.get(this.apiURL, {headers: headers});
+  }
 }
