@@ -1,10 +1,13 @@
 <div class="container">
   <h1>{{title}}</h1>
-  <ul>
-    <li *ngFor="let project of projects">
-      <strong>Nombre: </strong>{{project.name}}<br>
-      <strong>Precio: </strong>{{project.price}}<br>
-      <strong>Descripción: </strong>{{project.description}}
+  <ul class="projects">
+    <li class="project-item" *ngFor="let project of projects">
+      <a [routerLink]="['proyecto', project.id]" routerLinkActive="router-link-active" >
+        <p class="project-item__name"><strong>Nombre: </strong>{{project.name}}</p>
+        <p class="project-item__price"><strong>Precio: </strong>{{project.year}}</p>
+        <p class="project-item__description"><strong>Descripción: </strong>{{project.description}}</p>
+        <p class="project-item__description"><strong>ID: </strong>{{project.id}}</p>
+      </a>
     </li>
   </ul>
 </div>

@@ -11,6 +11,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateProjectsComponent } from './components/create-projects/create-projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { ItemComponent } from './components/item/item.component';
+import { ImagePipe } from './pipes/image.pipe';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { ErrorComponent } from './components/error/error.component';
     ProjectsComponent,
     CreateProjectsComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
+    ItemComponent,
+    ImagePipe
   ],
   imports: [
     BrowserModule,

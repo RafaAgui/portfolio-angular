@@ -1,0 +1,19 @@
+<h1>{{project.name}}</h1>
+<p class="project-item__price"><strong>Precio: </strong>{{project.year}}</p>
+<p class="project-item__description"><strong>Descripción: </strong>{{project.description}}</p>
+<p class="project-item__description"><strong>ID: </strong>{{project.id}}</p>
+<p class="project-item__description"><strong>Stock: </strong>{{project.star}}</p>
+<div>
+  <img src='./../../../assets/images/{{project.alt_img }}' alt="image">
+</div>
+<p class="buttons" *ngIf="confirm == false">
+  <a [routerLink]="['../../../crear-proyecto']" routerLinkActive="router-link-active" class="button">Editar</a>
+  <a (click)="setConfirm(true)" class="button">borrar</a>
+</p>
+<div *ngIf="confirm == true">
+  <p>¿estás seguro de que quieres borrar?</p>
+  <p class="buttons" >
+    <a (click)="setConfirm(false)" class="button">Cancelar</a>
+    <a (click)="deleteProject(id)" class="button">Eliminar definitivamente</a>
+  </p>
+</div>

@@ -52,109 +52,84 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "name": "Essential TypeScript 4: From Beginner to Pro",
-      "price": 45,
-      "description": "Learn the essentials and more of TypeScript, a popular superset of the JavaScript language that adds support for static typing. TypeScript combines the typing features of C# or Java.",
-      "categoryId": 1,
-      "stock": 0
+      "id": "eloy_02",
+      "name": "Colegas",
+      "director": "Eloy de la Iglesia",
+      "star": "José Luis Manzano",
+      "year": "1982",
+      "description": "Una rara avis dentro de la filmografía quinqui, y quizás por eso mismo una de las mejores películas del filón. Nos cuenta las peripecias de tres jóvenes (Manzano, Antonio y Rosario Flores) en la que José (interpretado por Manzano) deja embarazada a Rosario y entre los tres intentan buscar dinero para que ella aborte, pero con la gran tasa de paro juvenil de la época solo encuentran oportunidades en la delincuencia y el trapicheo."
     },
     {
-      "id": 2,
-      "name": "Hackeando el cerebro de tus compradores: PsychoGrowth",
-      "price": 5,
-      "description": "En Hackeando del cerebro de tus compradores, Corti nos revela cómo muchas compañías crean productos digitales o procesos de venta capaces de conectar con la psicología del comprador.",
-      "categoryId": 1,
-      "stock": 10
+      "id": "eloy_03",
+      "name": "El pico",
+      "director": "Eloy de la Iglesia",
+      "star": "José Luis Manzano",
+      "year": "1983",
+      "description": "Dos jóvenes en el País Vasco, el primero hijo de un Guardia Civil y el segundo hijo de un político abertzale, que se conocen del instituto se inician en el mundo de las drogas hasta verse enganchados a la heroína, lo que les llevará a su perdición."
     },
     {
-      "id": 3,
-      "name": "Angular Routing: Learn To Create client-side and SPA with Routing and Navigation",
-      "price": 17,
-      "description": "In this book, the reader will be able to focus on one concept of Angular in deep.",
-      "categoryId": 1,
-      "stock": 10
+      "id": "eloy_04",
+      "name": "El pico 2",
+      "director": "Eloy de la Iglesia",
+      "star": "José Luis Manzano",
+      "year": "1984",
+      "description": "Después del asesinato de un camello y su mujer en el País Vasco; Paco, hijo de un Guardia Civil, tiene que entrar en prisión. Allí conoce los sinsabores de las la vida penitenciaria y cuando por fin, tras la influencia de su padre es devuelto a la libertad, sólo podrá delinquir para seguir consiguiendo droga."
     },
     {
-      "id": 4,
-      "name": "SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter",
-      "price": 19,
-      "description": "Ideal for Android smartphones and tablets, and MIL cameras. SanDisk Memory Zone app for easy file management (Download and Installation Required).",
-      "categoryId": 2,
-      "stock": 10
+      "id": "eloy_05",
+      "name": "La estanquera de vallecas",
+      "director": "Eloy de la Iglesia",
+      "star": "José Luis Manzano",
+      "year": "1987",
+      "description": "Otra de las películas raras del director, esta vez desde la comedia. Basada en una obra de teatro, muchos críticos la consideran el ocaso del género quinqui, con una fórmula agotada y explotada. Un hombre maduro y un joven quinqui, entran en un estanco para atracarlo. Lo que en principio parece un golpe sencillo, se complica por la resistencia de la estanquera que se niega a entregarles el dinero."
     },
     {
-      "id": 5,
-      "name": "GoPro HERO9 Black - Waterproof Action Camera with Front LCD",
-      "price": 399,
-      "description": "5K Video - Shoot stunning video with up to 5K resolution, perfect for maintaining detail even when zooming in",
-      "categoryId": 2,
-      "stock": 10
+      "id": "loma_01",
+      "name": "Perros callejeros",
+      "director": "José Antonio de la Loma",
+      "star": "Ángel Fernández Franco",
+      "year": "1977",
+      "description": "Película que dará origen al filón. Basada en la historia del Vaquilla, que no pudo interpretar la película por encontrarse recluido cuando se iba a rodar. Cuenta la vida de un joven marginal que vive en el barrio de La Bota en Barcelona y que se gana la vida entre atracos y tirones. Entre tanto se enamora de la sobrina de el Esquinao, un gitano que lleva el cotarro en el barrio, y la cual ya está comprometida. El Torete conseguirá seducirla, hecho que el Esquinao no perdonará."
     },
     {
-      "id": 6,
-      "name": "CL3 Rated High-Speed 4K HDMI Cable - 6 Feet",
-      "price": 7,
-      "description": "HDMI A Male to A Male Cable: Supports Ethernet, 3D, 4K video and Audio Return Channel (ARC)",
-      "categoryId": 2,
-      "stock": 10
+      "id": "loma_02",
+      "name": "Perros callejeros II: Busca y captura",
+      "director": "José Antonio de la Loma",
+      "star": "Ángel Fernández Franco",
+      "year": "1979",
+      "description": "Tras el éxito retoma y continúa el argumento de la primera película, relatándonos las aventuras del Torete y su banda. Tras el estreno de la película Perros callejeros, el protagonista es acusado de realizar un atraco en una gasolinera, hecho que nunca pudo cometer, por encontrase ese mismo día en Zaragoza visionando la película. El propio director se encargará de aclarar, defender y apadrinar al joven delincuente."
     },
     {
-      "id": 7,
-      "name": "Logitech MK270 Wireless Keyboard and Mouse Combo",
-      "price": 32,
-      "description": "The USB receiver is conveniently located in the box, top flap. This wireless keyboard and mouse feature Logitech Advanced 2.4GHz technology with a range of up to 10 metres.",
-      "categoryId": 3,
-      "stock": 10
+      "id": "loma_03",
+      "name": "Los últimos golpes de El Torete",
+      "director": "José Antonio de la Loma",
+      "star": "Ángel Fernández Franco",
+      "year": "1980",
+      "description": "El Torete se encuentra con el Vaquilla, interpretado por Bernard Seray, mientras realizan el atraco a un banco. Los viejos amigos emprenden una huida, entre atraco y atraco que no podrá acabar bien. De La Loma vuelve a explotar la fórmula de Perros callejeros, contando las aventuras y desventuras de los jóvenes marginales de Barcelona. Aunque esta tercera entrega es menos creíble, tiene como elemento diferenciador a dos periodistas que van creando una dialéctica sobre las causas y efectos de estos jóvenes barceloneses. "
     },
     {
-      "id": 8,
-      "name": "External CD Drive USB 3.0 Portable CD DVD +/-RW Drive DVD/CD ROM",
-      "price": 20,
-      "description": "Plug & play. Easy to use,powered by USB port. No external driver and Power needed. Just plug it into your USB port and the DVD driver will be detected",
-      "categoryId": 3,
-      "stock": 10
+      "id": "loma_04",
+      "name": "Yo, el vaquilla",
+      "director": "José Antonio de la Loma",
+      "star": "Raul García Losada",
+      "year": "1985",
+      "description": "De la Loma por fin consigue trabajar con su amigo el Vaquilla. Partiendo de la autobiografía que éste escribió durante sus confinamientos, nos relata la infancia y primeras aventuras y sobre todo desventuras del que sería uno de los jóvenes delincuentes más famosos de España. Sus continuas entradas en reformatorios, sus primeras fechorías al volante con apenas nueve años y sus idas y venidas entre distintos familiares que nunca le prestaron atención, excepto para enseñarle a delinquir. Lo más destacable de la película son algunas imágenes de carácter documental representando el estilo de vida del barrio."
     },
     {
-      "_id": "",
-      "name": "First name*",
-      "price": 123,
-      "description": "trololo",
-      "categoryId": "",
-      "stock": 32,
-      "id": 9
+      "id": "loma_05",
+      "name": "Perras callejeras",
+      "director": "José Antonio de la Loma",
+      "star": "Sonia Martínez",
+      "year": "1985",
+      "description": "Con Perras callejeras De la Loma parece querer darle un vuelco al género, el cual fue acusado de ser tremendamente machista, siempre representado por varones con una alta carga de testosterona y el que las mujeres solo sirven de excusa para exhibir algún cuerpo y satisfacer el “destape” tan aclamado después del franquismo. Protagonizada por tres mujeres, cada una de las cuales con sus vicisitudes, una acaba de salir de la cárcel, otra es drogadicta y la tercera tiene que lidiar con la pobreza y un padre maltratador. Así que nuestras tres protagonistas no ven otra solución que echarse a la calle a buscarse la vida. Esta película parece más un remake de Nunca en horas de clase, que una película propio del género quinqui, en la que las mujeres explotan su condición femenina para conseguir cualquier objetivo. "
     },
     {
-      "name": "First name*",
-      "price": 2,
-      "description": "trololo",
-      "categoryId": "",
-      "stock": 2,
-      "id": 10
-    },
-    {
-      "name": "First name*",
-      "price": 1,
-      "description": "trololo",
-      "categoryId": "",
-      "stock": 1,
-      "id": 11
-    },
-    {
-      "name": "First name*",
-      "price": 2,
-      "description": "trololo",
-      "categoryId": "",
-      "stock": -2,
-      "id": 12
-    },
-    {
-      "name": "First name*",
-      "price": 2,
-      "description": "trololo",
-      "categoryId": "",
-      "stock": 3,
-      "id": 13
+      "id": "loma_06",
+      "name": "Tres días de libertad",
+      "director": "José Antonio de la Loma",
+      "star": "Joan Bentallé",
+      "year": "1995",
+      "description": "Epílogo de la serie en la que de nuevo inspirada en la vida de el Vaquilla, nos muestra uno de los permisos penitenciarios de los que pudo disfrutar, en el que parece que todo el mundo está convencido de su fuga. Aunque tampoco se considere una película de género quinqui, si hay temas recurrentes (la delincuencia, la cárcel, el tráfico de drogas) que están presentes durante toda la película."
     }
   ],
   "orders": [

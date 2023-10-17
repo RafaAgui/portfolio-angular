@@ -1,8 +1,9 @@
 export interface ProjectInterface {
-  id: number;
+  id: string;
   name: string;
-  price: number;
+  year: number;
   description: string;
-  categoryId: number;
-  stock: number;
+  director: string;
+  star: string,
+  alt_img?: string;
 }

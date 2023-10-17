@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { ActivatedRoute, Router } from '@angular/router';
+import { switchMap } from 'rxjs';
 import { Project } from '../../models/project'
 import { ProjectsService } from '../../services/project.service'
 import { UploadService } from '../../services/upload.service'
@@ -20,38 +21,63 @@ export class CreateProjectsComponent {
   constructor(
     private _projectService: ProjectsService,
     private _uploadService: UploadService,
+    private _router: Router,
+    private _route: ActivatedRoute
   ){
     this.title = "Crear proyecto";
-    this.project = new Project ( '', '', '', '', '');
+    this.project = new Project ( '', '', '', '', '', '', '' );
     this.status = '';
     this.filesToUpload = [];
   }
 
-  onSubmit(form: any){
+//   onSubmit(form: any){
 
-    //guardar los datos
-    this._projectService.saveProject(this.project).subscribe(
-      response => {
-        if(response){
-          this.status = 'success';
+//     //guardar los datos
+//     this._projectService.saveProject(this.project).subscribe(
+//       response => {
+//         if(response){
+//           console.log(this.filesToUpload);
+//           this._uploadService.makeFileRequest(this.apiURL+this.filesToUpload);
 
-          this._uploadService.makeFileRequest(this.apiURL+"upload-imae/"+response.project, [], this.filesToUpload, '').then((result:any) => {
-              console.log(result)
-          });
-          form.reset();
-        }
-        else{
-          this.status = 'failed';
-        }
-      },
-      error => {
-        console.log(<any>error);
-      }
-    );
+
+//           form.reset();
+//         }
+//         else{
+//           this.status = 'failed';
+//         }
+//       },
+//       error => {
+//         console.log(<any>error);
+//       }
+//     );
+//   }
+//   fileChangeEvent(fileInput: any){
+//     console.log(fileInput);
+//     this.filesToUpload = fileInput.target.files.name;
+//   }
+// }
+
+onSubmit(form: any) {
+  if(this.project.name.trim().length === 0){
+    return;
   }
-  fileChangeEvent(fileInput: any){
-    console.log(fileInput);
-    this.filesToUpload = <Array<File>>fileInput.target.files;
+  if (this.project.id){
+    this._projectService.updateProject(this.project)
+    .subscribe (project => console.log('Actualizar película', project))
+  } else {
+
+    this._projectService.saveProject(this.project)
+    .subscribe(project => {
+      this._router.navigate(['/proyectos/proyecto/', project.id]);
+    })
   }
 }
 
+ngOnInit(): void {
+  this._route.params
+  .pipe(
+    switchMap( ({id}) => this._projectService.getProjectId(id))
+  )
+  .subscribe(project => {this.project = this.project})
+}
+}

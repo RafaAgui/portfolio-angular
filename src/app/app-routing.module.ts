@@ -6,6 +6,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateProjectsComponent } from './components/create-projects/create-projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { ItemComponent } from './components/item/item.component';
 
 const routes: Routes = [
   // Default route to projects page on app load
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'proyectos', component: ProjectsComponent},
   { path: 'crear-proyecto', component: CreateProjectsComponent},
   { path: 'contacto', component: ContactComponent},
+  { path: 'proyectos/proyecto/:id', component: ItemComponent},
   { path: '**', component: ErrorComponent}
 ];
 

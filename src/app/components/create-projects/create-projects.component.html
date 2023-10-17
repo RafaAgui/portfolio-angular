@@ -22,20 +22,24 @@
       </span>
     </p>
     <p>
-      <label for="price">Precio</label>
-      <input required type="number" name="price" #price="ngModel" [(ngModel)]="project.price">
-      <span *ngIf="price.touched && !price.valid">
-        El Precio es obligatorio
+      <label for="year">Año</label>
+      <input required type="number" name="year" #year="ngModel" [(ngModel)]="project.year">
+      <span *ngIf="year.touched && !year.valid">
+        El Año es obligatorio
       </span>
     </p>
     <p>
-      <label for="stock">stock</label>
-      <input type="number" name="stock" #stock="ngModel" [(ngModel)]="project.stock">
+      <label for="director">director</label>
+      <input type="name" name="director" #director="ngModel" [(ngModel)]="project.director">
     </p>
     <p>
-      <label for="image">Subir imagen</label>
-      <input  type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)">
+      <label for="star">star</label>
+      <input type="name" name="star" #star="ngModel" [(ngModel)]="project.star">
     </p>
+    <div>
+      <label for="image">Imágen</label>
+      <input type="url" required [(ngModel)]="project.alt_img" name="img">
+    </div>
     <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid">
   </form>
 </div>
