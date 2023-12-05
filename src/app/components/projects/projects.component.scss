@@ -1,3 +1,12 @@
+:host {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  &.loaded {
+   opacity: 1;
+    /* Estilos para el componente cuando la página se ha cargado completamente */
+  }
+}
+
 .container {
   height: calc(100vh - 4.5rem);
   overflow-y: auto;
