@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ItemComponent } from './components/item/item.component';
 import { ImagePipe } from './pipes/image.pipe';
+import { SliderComponent } from './components/slider/slider.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ImagePipe } from './pipes/image.pipe';
     ContactComponent,
     ErrorComponent,
     ItemComponent,
-    ImagePipe
+    ImagePipe,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

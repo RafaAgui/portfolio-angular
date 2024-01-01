@@ -5,22 +5,17 @@ import * as $ from 'jquery';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit{
+export class ContactComponent {
+  public widthSlider: number = 0;
+  public widthToSlider: number = 0;
 
-  ngOnInit(){
-    $('.gallery img').on('click', function() {
-      var imgUrl = $(this).attr('src');
-      var imgAlt = $(this).attr('alt');
+  author: any
 
-      var lightbox = '<div class="lightbox">' +
-          '<img src="' + imgUrl + '" alt="' + imgAlt + '">' +
-          '</div>';
+  loadSlider (){
+    this.widthToSlider = this.widthSlider;
+  }
 
-      $('main').append(lightbox);
-
-      $('.lightbox').on('click', function() {
-          $(this).remove();
-      });
-  });
+  showAuthor(event: any){
+    this.author = event;
   }
 }

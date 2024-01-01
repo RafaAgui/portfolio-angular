@@ -1,11 +1,10 @@
-<p>contact works!</p>
+<h1>Contacto</h1>
 <main>
-<div class="gallery">
-  <ul>
-      <li><img src="../../../assets/images/placeholder.png" alt="Imagen 1"></li>
-      <li><img src="../../../assets/images/placeholder.png" alt="Imagen 2"></li>
-      <li><img src="../../../assets/images/placeholder.png" alt="Imagen 3"></li>
-      <!-- Agrega más imágenes según sea necesario -->
-  </ul>
-</div>
+  <p><input type="number" [(ngModel)]="widthSlider" (keyup.enter)="loadSlider()"/></p>
+
+  <div *ngIf="widthToSlider">
+    <app-slider [widthS]="widthToSlider" (getAuthor)="showAuthor($event)"></app-slider>
+  </div>
+
+  {{author.name + ' ' + author.website}}
 </main>
